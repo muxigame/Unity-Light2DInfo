@@ -12,8 +12,13 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Rendering;
+#if UNITY_2020_4_OR_NEWER
 using UnityEngine.Rendering.Universal;
+#else
+using UnityEngine.Experimental.Rendering.Universal;
+#endif
+using UnityEngine.Rendering;
+
 
 namespace Light2DInfo.Scripts{
     [ExecuteAlways]
