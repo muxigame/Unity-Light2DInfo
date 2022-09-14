@@ -2,5 +2,12 @@
   "name": "com.muxigame.light2dinfo",
   "version": "1.0.1",
   "displayName": "Light2DInfo",
-  "description": "Enable your Unity read light 2d info."
+  "description": "Enable your Unity read light 2d info.",
+  "changelogUrl": "https://muxigame.com/help",
+  "licensesUrl": "https://muxigame.com/terms-of-service",
+  "author": {
+    "name": "MUXIGame",
+    "email": "muxigame@outlook.com",
+    "url": "https://www.muxigame.com"
+  }
 }
