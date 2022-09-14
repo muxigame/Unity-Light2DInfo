@@ -12,11 +12,8 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
-#if UNITY_2020_4_OR_NEWER
 using UnityEngine.Rendering.Universal;
-#else
 using UnityEngine.Experimental.Rendering.Universal;
-#endif
 using UnityEngine.Rendering;
 
 
@@ -64,7 +61,7 @@ namespace Light2DInfo.Scripts{
 
         public void Init(){
             var light2Ds = FindObjectsOfType<Light2D>();
-            mainLight2D = light2Ds.First(x => x.lightType       == Light2D.LightType.Global);
+            mainLight2D = light2Ds.First(x => x.lightType == Light2D.LightType.Global);
             additionalLight2D = light2Ds.Where(x => x.lightType == Light2D.LightType.Point).ToList();
             _Light2DCount = Shader.PropertyToID("_Light2DCount");
             _Light2DColor = Shader.PropertyToID("_Light2DColor");
